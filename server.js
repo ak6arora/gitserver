@@ -29,7 +29,7 @@ httpApp.post('/sendQuery', function(req, res) {
     service: "Gmail",
     auth: {
       user: "aks.7.arora@gmail.com",
-      pass: "Akshay@1992"
+      pass: ""
     }
   });
 
