@@ -1,0 +1,17 @@
+{
+  "name": "GitServer",
+  "version": "1.0.0",
+  "description": "Sever for my git site",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "nodemailer": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Akshay Arora",
+  "license": "ISC"
+}
