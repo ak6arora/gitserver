@@ -5,7 +5,7 @@ var port = process.env.PORT || 5000
 var nodemailer = require('nodemailer');
 var httpApp = express();
 
-// Start Express http server on port 8080
+// Start Express http server on port 5000 for HerokuApp
 var webServer = http.createServer(httpApp).listen(port, function() {
   console.log('Dev server is up on 5000');
 });
@@ -22,6 +22,8 @@ httpApp.get('/', function(req, res) {
 });
 
 httpApp.post('/sendQuery', function(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   req.on('data',function(data){
 
 
