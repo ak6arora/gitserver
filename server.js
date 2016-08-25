@@ -26,16 +26,16 @@ httpApp.post('/sendQuery', function(req, res) {
 
 
   var smtpTransport = nodemailer.createTransport("SMTP", {
-    service: "Gmail",
+    service: "hotmail",
     auth: {
-      user: "aks.7.arora@gmail.com",
+      user: "akshay9892@outlook.com",
       pass: "Akshay@1992"
     }
   });
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-    to: 'akshay9892@outlook.com', // list of receivers
+    to: 'aks.7.arora@gmail.com', // list of receivers
     subject: 'Email from ak6arora.github.io', // Subject line
     text: 'Name:'+ JSON.parse(data.toString())['name'] +'\nEmail:'+JSON.parse(data.toString())['email']+'\nMessage:'+JSON.parse(data.toString())['message'], // plaintext body
     html: '<div>Name:'+ JSON.parse(data.toString())['name'] +'<br/>Email:'+JSON.parse(data.toString())['email']+'<br/>Message:'+JSON.parse(data.toString())['message']+'</div>' // html body
