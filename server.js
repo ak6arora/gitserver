@@ -30,7 +30,7 @@ httpApp.post('/sendQuery', function(req, res) {
   var smtpTransport = nodemailer.createTransport("SMTP", {
     service: "Gmail",
     auth: {
-      user: "aks.7.arora@gmail.com",
+      user: "ak6arora@gmail.com",
       pass: "Akshay@1992"
     }
   });
